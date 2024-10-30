@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inria Serif";
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #E8E5E5;
+}
+
+header{
+    display: grid;
+    place-items: center;
+
+    width: 100vw;
+    height: 116px;
+    border-bottom: 1px solid #000;
+}
+
+header img{
+    object-fit: cover;
+    width: 251px;
+}
+
+
+
+.hero{
+    position: relative;
+    width: 100vw;
+    height: 1394px;
+}
+
+@keyframes flutter{
+    0%, 100%{
+        transform: translateY(0%) rotate(0deg);
+    }
+    50%{
+        transform: translateY(30%) rotate(25deg);
+    }
+}
+
+.hero .image{
+    object-fit: cover;
+    width: 122px;
+    position: absolute;
+
+    left: 500px;
+    top: 202px;
+
+    animation: flutter 7s ease-in-out infinite;
+}
+
+.hero .img2{
+    left: 950px;
+}
+
+.images{
+    margin-top: 90px;
+    display: flex;
+    gap: 6px;
+}
+
+.images img{
+    filter: grayscale(100%);
+
+    height: 690px;
+
+    transition: all 1s;
+}
+
+.images img:hover{
+    filter: grayscale(0%);
+}
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* alinha verticalmente */
+    align-items: center; /* alinha horizontalmenre*/
+
+}
+
+.title:first-of-type{
+    margin-top: 59px;
+}
+
+.title{
+    font-size: 164px;
+    font-style: italic;
+    font-weight: bold;
+}
